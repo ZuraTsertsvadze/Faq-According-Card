@@ -1,0 +1,232 @@
+
+
+*{
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+
+
+
+
+.body {
+  background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.main-svg {
+  width: 14.8031rem;
+
+  position: absolute;
+  top: -12.3125rem;
+  right: -7.3125rem;
+}
+
+.svg-bot{
+  width: 15rem;
+  height: 9.0625rem;
+  position: absolute;
+  top: -1.4375rem;
+  right: -7.5rem;
+}
+
+
+.main {
+  background-color: white;
+  padding: 0rem 1.5rem;
+  padding-bottom: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0rem 3.125rem 3.125rem -1.25rem rgba(53, 18, 122, 0.497159);
+  border-radius: 1.4375rem;
+  width: 100%;
+  max-width: 20.4375rem;
+}
+
+.main-h1 {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: #1e1f36;
+  margin-top: 8.25rem;
+  margin-bottom: 2.5rem;
+
+}
+
+.img-cont{
+  position: relative;
+}
+
+.main-cont{
+  width: 100%;
+}
+
+
+
+.question {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  padding-bottom: 18px ;
+  padding-top: 1.125rem;
+  color: #4b4c5f;  
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+
+
+}
+
+.question:hover{
+  color:#F47B56;
+
+}
+
+.main-text {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  color: #787887;
+  display: none;
+  margin-bottom: 1.125rem;
+}
+
+.line {
+  background-color: #e8e8ea;
+  width: 100%;
+  height: 0.0625rem;
+
+}
+
+
+.text-cont{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-svg-desk{
+  display: none;
+}
+
+.box-svg{
+  width: 5.9375rem;
+  height: 5.9375rem;
+position: absolute;
+top: -2.6875rem;
+right: 12.25rem;
+z-index: 1;
+}
+
+.real-main{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-width: 20.4375rem;
+  position: relative;
+
+}
+
+.arrow{
+  pointer-events: none;
+}
+
+
+@media only screen and (min-width: 1440px) {
+
+.main{
+flex-direction: row;
+padding-left: 0rem;
+max-width: 57.5rem;
+overflow: hidden;
+padding: 0;
+
+}
+
+
+
+
+.main-svg{
+  display: none;
+}
+
+
+.svg-bot{
+  display: none;
+}
+
+
+.main-svg-desk{
+  display: block;
+  width: 29.4806rem;
+justify-content:space-between;
+position: absolute;
+left: -4.6875rem;
+top: -13.4375rem;
+   
+}
+
+
+.svg-mob-main{
+  position: relative;
+}
+
+.main-cont{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+
+.main-h1{
+
+  align-self: flex-start;
+  margin: 0;
+  margin-bottom: 2.8125rem;
+  margin-top: 4.0625rem;
+}
+
+
+.main-cont{
+  margin-right:5.9375rem;
+margin-bottom: 5.1875rem;
+margin-left: 31.75rem;
+
+}
+
+
+.box-svg{
+  width: 12rem;
+  height: 12rem;
+position: absolute;
+top: 12.3125rem;
+left: -5.9375rem;
+z-index: 1;
+}
+
+.arrow{
+  margin-left: 4.5rem;
+}
+
+.real-main{
+  position: relative;
+width: 100%;
+max-width: 57.5rem;
+}
+
+}
