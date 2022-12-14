@@ -6,6 +6,9 @@ const mainText = document.querySelector(".main-text");
 const mainTextAll = document.querySelectorAll(".main-text");
 const arrowSvg = document.querySelectorAll(".arrow-svg");
 
+
+
+
 question.forEach((el) => {
 
     el.addEventListener("click", (e) => {
@@ -13,8 +16,6 @@ question.forEach((el) => {
 
 
         const reseter = () => {
-
-
 
             question.forEach((el) => {
 
@@ -27,28 +28,37 @@ question.forEach((el) => {
                 el.style.transform = "rotate(360deg)";
 
             });
+
         };
 
         reseter();
 
 
+        
+        
+        console.log(e.target.closest(".text-cont").children[1])
+
+
+        
         e.target.dataset.active = "true";
 
         e.target.children[0].children[0].style.transform = "rotate(180deg)";
 
 
         const selfClick = () => {
-
+         
 
             const evenTargetChilds = [...e.target.closest(".text-cont").children];
 
             evenTargetChilds.forEach((el) => {
 
-                if (el.classList.contains("main-text")) {
+                if (el.classList.contains("main-text")  ) {
+                        
+                    const elStyle=window.getComputedStyle(el)
 
-          
+                
 
-                    if (el.style.display === "none") {
+                    if ( elStyle.display === "none") {
 
                         el.style.display = "block";
 
@@ -68,12 +78,11 @@ question.forEach((el) => {
         };
 
 
+ 
+          selfClick()
+          
 
-        selfClick()
-
-
-
-        const otherClick = () => {
+          const otherClick = () => {
 
 
 
@@ -101,5 +110,8 @@ question.forEach((el) => {
         otherClick();
 
 
+    
+
+       
     });
 });
